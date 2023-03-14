@@ -1,0 +1,49 @@
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
+
+
+<section class="resume-section spad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-7 offset-xl-2">
+                <div class="section-title">
+                    <h2>Work Experience</h2>
+                </div>
+                <form method="post" action='<c:url value="/editWorkExperience/${workExperience.id}"/>'>
+                    <ul class="resume-list">
+
+                        <li>
+                            <label class="col-2 col-form-label">Finish</label>
+                            <h2><input class="form-control" type="text" name="finishWork" value="${workExperience.finishWork}"/></h2>
+
+                            <label class="col-2 col-form-label">Start</label>
+                            <h2><input class="form-control" type="text" name="startWork"
+                                       value="${workExperience.startWork}"/></h2>
+
+                            <label class="col-2 col-form-label">CompaneName</label>
+                            <h3><input class="form-control" type="text" name="companeName"
+                                        value="${workExperience.companeName}"/></h3>
+
+                            <label class="col-2 col-form-label">JobTitle</label>
+                            <h3><input class="form-control" type="text" name="jobTitle"
+                                       value="${workExperience.jobTitle}"/></h3>
+
+                            <label class="col-2 col-form-label">Experience</label>
+                            <h3><input class="form-control" type="text" name="experience"
+                                       value="${workExperience.experience}"/></h3>
+
+                        </li>
+
+                        <input class="btn btn-general btn-secondary mb-3" type="submit" value="Save" id="saveButton"></input>
+                        <sec:csrfInput/>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+        <form method="post" action='<c:url value="/workExperience/${workExperienceModel.id}"/>'>
+            <input class="btn btn-danger pull-right" type="submit" value="Delete" id="deleteButton"></input>
+            <sec:csrfInput/>
+        </form>
+    </div>
+</section>

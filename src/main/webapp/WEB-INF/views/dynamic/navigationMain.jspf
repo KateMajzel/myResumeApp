@@ -1,0 +1,29 @@
+<!-- Header section start -->
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security"%>
+
+<header class="header-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="site-logo">
+                    <h2><a href='<c:url value="/"/>'>CV</a></h2>
+                    <p>Junior Java Kate Majzel</p>
+                </div>
+            </div>
+            <div class="col-md-8 text-md-right header-buttons">
+                <a class="site-btn" target="_blank" href='<c:url value="resource/pdf/CVKMP.pdf"/>'>
+                    <span>Download CV</span></a>
+                <a class="site-btn" href='<c:url value="/workExperience"/>'>
+                    <span>Work Experience</span></a>
+                <a class="site-btn" href='<c:url value="/hub"/>'>
+                    <span>Git Hub</span></a>
+                <a class="site-btn" href='<c:url value="/education"/>'>
+                    <span>Education</span></a>
+                <a class="site-btn" href='<c:url value="/contact"/>'>
+                    <span>Contact Me</span></a>
+                <a class="site-btn" href='<c:url value="/login"/>'>
+                    <span>Login</span></a>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,33 @@
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
+
+<section class="resume-section with-bg spad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-7 offset-xl-2">
+                <div class="section-title">
+                    <h2>Education</h2>
+                </div>
+                <ul class="resume-list">
+
+                    <c:forEach items="${educationModel}" var="edu">
+                    <li>
+                        <h2><fmt:formatDate pattern="yyyy-MM" value="${edu.startEducationDate}"/></h2>
+                        <h2><fmt:formatDate pattern="yyyy-MM" value="${edu.finishEducationDate}"/></h2>
+                        <h3>${edu.directionName}</h3>
+                        <h4>${edu.schoolName}</h4>
+                        <p>${edu.informationOfeducation} </p>
+                    </li>
+
+                        <security:authorize access="hasAnyRole('ADMIN')">
+                            <a href='<c:url value="/editEducation/${edu.id}"/>'
+                               class="btn btn-general btn-secondary mb-3" role="button">Edit</a>
+                            <sec:csrfInput/>
+                        </security:authorize>
+                    </c:forEach>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

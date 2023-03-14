@@ -1,0 +1,90 @@
+<section class="portfolio-section spad pb-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-4 col-md-8 offset-xl-2 ">
+                <div class="section-title">
+                    <h2>Git hub</h2>
+                </div>
+            </div>
+            <div class="col-md-4 text-md-right">
+                <a href="https://github.com/KateMajzel" target="_blank" class="site-btn mb-5">See All Portfolio</a>
+            </div>
+        </div>
+        <div class="portfolio-warp">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="portfolio-item">
+                        <a href="img/portfolio/1.jpg" class="set-bg port-pic" data-setbg="resource/img/portfolio/1.jpg"></a>
+                        <h2>App Restaurant</h2>
+                        <p>JAVA</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="portfolio-item">
+                        <a href="img/portfolio/2.jpg" class="set-bg port-pic" data-setbg="resource/img/portfolio/2.jpg"></a>
+                        <h2>App Library</h2>
+                        <p>JAVA</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="portfolio-item">
+                        <a href="img/portfolio/3.jpg" class="set-bg port-pic" data-setbg="resource/img/portfolio/3.jpg"></a>
+                        <h2>Spring Web MVC (CRUD)</h2>
+                        <p>Java, Spring Boot, Hibernate, Jpa, SQL, Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="portfolio-item">
+                        <a href="img/portfolio/4.jpg" class="set-bg port-pic" data-setbg="resource/img/portfolio/4.jpg"></a>
+                        <h2>In preparation -> Mobile App</h2>
+                        <p>Flutter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio-section spad pb-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-4 col-md-8 offset-xl-2 ">
+                <div class="section-title">
+                    <h2>Other skills</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-warp">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="portfolio-item">
+                        <a href="img/portfolio/1.jpg" class="set-bg port-pic" data-setbg="resource/img/portfolio/1.jpg"></a>
+                        <h2>App Restaurant</h2>
+                        <p>JAVA</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="portfolio-item">
+                        <a href="img/portfolio/2.jpg" class="set-bg port-pic" data-setbg="resource/img/portfolio/2.jpg"></a>
+                        <h2>App Library</h2>
+                        <p>JAVA</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="portfolio-item">
+                        <a href="img/portfolio/3.jpg" class="set-bg port-pic" data-setbg="resource/img/portfolio/3.jpg"></a>
+                        <h2>Spring Web MVC (CRUD)</h2>
+                        <p>Java, Spring Boot, Hibernate, Jpa, SQL, Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="portfolio-item">
+                        <a href="img/portfolio/4.jpg" class="set-bg port-pic" data-setbg="resource/img/portfolio/4.jpg"></a>
+                        <h2>In preparation -> Mobile App</h2>
+                        <p>Flutter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Junior Java Developer CV</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Junior Java Developer - CV" href='<c:url value="https://index.html"/>'>
+    <meta name="keywords" content="resume, civic, onepage, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href='<c:url value="/resource/img/portfolio/logoMeisel.png"/>' rel="shortcut icon" href='<c:url value="https://index.html"/>'>
+
+    <!-- Google Fonts -->
+    <link href='<c:url value="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700"/>' rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href='<c:url value="/resource/css/bootstrap.min.css"/>'/>
+    <link rel="stylesheet" href='<c:url value="/resource/css/font-awesome.min.css"/>'/>
+    <link rel="stylesheet" href='<c:url value="/resource/css/flaticon.css"/>'/>
+    <link rel="stylesheet" href='<c:url value="/resource/css/owl.carousel.css"/>'/>
+    <link rel="stylesheet" href='<c:url value="/resource/css/magnific-popup.css"/>'/>
+    <link rel="stylesheet" href='<c:url value="/resource/css/style.css"/>'/>
+
+
+
+    <!--[if lt IE 9]>
+    <script src='<c:url value="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"/>'></script>
+    <script src='<c:url value="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"/>'></script>
+    <![endif]-->
+
+</head>

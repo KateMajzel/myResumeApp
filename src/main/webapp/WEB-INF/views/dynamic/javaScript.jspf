@@ -1,0 +1,9 @@
+
+<!--====== Javascripts & Jquery ======-->
+<script src='<c:url value="/resource/js/jquery-2.1.4.min.js"/>'></script>
+<script src='<c:url value="/resource/js/bootstrap.min.js"/>'></script>
+<script src='<c:url value="/resource/js/owl.carousel.min.js"/>'></script>
+<script src='<c:url value="/resource/js/magnific-popup.min.js"/>'></script>
+<script src='<c:url value="/resource/js/circle-progress.min.js"/>'></script>
+<script src='<c:url value="/resource/js/main.js"/>'></script>
+

@@ -1,0 +1,50 @@
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
+
+<section class="resume-section with-bg spad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-7 offset-xl-2">
+                <div class="section-title">
+                    <h2>Education</h2>
+                </div>
+                <form method="post" action='<c:url value="/editEducation${education.id}"/>'>
+                    <ul class="resume-list">
+
+                        <li>
+                            <label class="col-2 col-form-label">Start</label>
+                            <h2><input class="form-control" type="text" name="startEducationDate" value="${education.startEducationDate}"/></h2>
+
+                            <label class="col-2 col-form-label">Finish</label>
+                            <h2><input class="form-control" type="text" name="finishEducationDate"
+                                       value="${education.finishEducationDate}"/></h2>
+
+                            <label class="col-2 col-form-label">DirectionName</label>
+                            <h3><input class="form-control" type="text" name="directionName"
+                                       value="${education.directionName}"/></h3>
+
+                            <label class="col-2 col-form-label">SchoolName</label>
+                            <h3><input class="form-control" type="text" name="schoolName"
+                                       value="${education.schoolName}"/></h3>
+
+                            <label class="col-2 col-form-label">informationOfeducation</label>
+                            <h3><input class="form-control" type="text" name="informationOfeducation"
+                                       value="${education.informationOfeducation}"/></h3>
+
+                        </li>
+
+                        <input class="btn btn-general btn-secondary mb-3" type="submit" value="Save" id="saveButton"></input>
+                        <sec:csrfInput/>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+        <form method="post" action='<c:url value="/education/${educationModel.id}"/>'>
+        <input class="btn btn-danger pull-right" type="submit" value="Delete" id="deleteButton"></input>
+            <sec:csrfInput/>
+        </form>
+    </div>
+</section>
+
+

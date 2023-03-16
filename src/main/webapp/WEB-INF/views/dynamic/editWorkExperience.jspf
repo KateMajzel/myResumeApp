@@ -9,7 +9,7 @@
                 <div class="section-title">
                     <h2>Work Experience</h2>
                 </div>
-                <form method="post" action='<c:url value="/editWorkExperience/${workExperience.id}"/>'>
+                <form method="post" action='<c:url value="/editWorkExperiences/${workExperience.id}"/>'>
                     <ul class="resume-list">
 
                         <li>
@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <form method="post" action='<c:url value="/workExperience/${workExperienceModel.id}"/>'>
+        <form method="post" action='<c:url value="/workExperiences/${workExperienceModel.id}"/>'>
             <input class="btn btn-danger pull-right" type="submit" value="Delete" id="deleteButton"></input>
             <sec:csrfInput/>
         </form>

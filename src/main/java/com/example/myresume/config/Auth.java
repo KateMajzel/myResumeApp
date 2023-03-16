@@ -39,10 +39,10 @@ public class Auth {
                 .antMatchers("/**", "/workExperiences/**", "/educations/**", "/thanks/**", "/hub/**", "/contact/**", "/resource/**")
                 .permitAll()
 
-                .antMatchers( "/","/editWorkExperience/**", "/editEducation/**")
+                .antMatchers( "/","/editWorkExperiences/**", "/editEducations/**")
                 .hasAnyRole("ADMIN")
 
-                .antMatchers(HttpMethod.POST, "/", "/editWorkExperience/**", "/editEducation/**").hasRole("ADMIN")
+                .antMatchers(HttpMethod.POST, "/", "/editWorkExperiences/**", "/editEducations/**").hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()
 

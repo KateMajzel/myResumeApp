@@ -20,7 +20,7 @@
                     </li>
 
                         <security:authorize access="hasAnyRole('ADMIN')">
-                            <a href='<c:url value="/editEducation/${edu.id}"/>'
+                            <a href='<c:url value="/editEducations/${edu.id}"/>'
                                class="btn btn-general btn-secondary mb-3" role="button">Edit</a>
                             <sec:csrfInput/>
                         </security:authorize>

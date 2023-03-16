@@ -20,7 +20,7 @@
                             <p>${exp.experience} </p>
                         </li>
                             <security:authorize access="hasAnyRole('ADMIN')">
-                                <a href='<c:url value="/editWorkExperience/${exp.id}"/>'
+                                <a href='<c:url value="/editWorkExperiences/${exp.id}"/>'
                                    class="btn btn-general btn-secondary mb-3" role="button">Edit</a>
                                 <sec:csrfInput/>
                             </security:authorize>

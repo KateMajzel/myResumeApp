@@ -26,32 +26,32 @@ public class EducationController {
  public String getAddEducation(Model model) {
      List<EducationModel> educationList = educationService.getEducationList();
      model.addAttribute("educationModel", educationList);
-        return "competence/education";
+        return "competence/educations";
  }
 
     @PostMapping("/addEducations")
     public RedirectView postEducation(EducationModel educationModel){
         educationService.addEducation(educationModel);
-        return new RedirectView("education");
+        return new RedirectView("educations");
     }
 
     @GetMapping ("/editEducations/{id}")
     public String getEducationById (@PathVariable("id")Long id, Model model){
         EducationModel educationModel = educationService.getEducationById(id);
         model.addAttribute("education", educationModel);
-        return "competence/editEducation";
+        return "competence/editEducations";
     }
 
     @PostMapping("/educations/{id}")
     public RedirectView removeEducation (@PathVariable("id") Long id){
         educationService.removeEducation(id);
-        return new RedirectView("/education");
+        return new RedirectView("/educations");
     }
 
     @PostMapping("/editEducations/{id}")
     public RedirectView postEditEducation (@PathVariable("id") Long id, EducationModel editEducationModel) {
         educationService.saveEditEducation(editEducationModel);
-        return new RedirectView("/education");
+        return new RedirectView("/educations");
     }
 
 }

@@ -7,49 +7,46 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.List;
 
 @Controller
-@RequestMapping(EducationController.CV_BASE_PATH)
 public class EducationController {
-
-    static final String CV_BASE_PATH = "/educations";
     private final EducationService educationService;
 
     public EducationController(EducationService educationService) {
         this.educationService = educationService;
     }
- @GetMapping
- public String getAddEducation(Model model) {
-     List<EducationModel> educationList = educationService.getEducationList();
-     model.addAttribute("educationModel", educationList);
+
+    @GetMapping("/educations")
+    public String getAddEducation(Model model) {
+        List<EducationModel> educationList = educationService.getEducationList();
+        model.addAttribute("educationModel", educationList);
         return "competence/educations";
- }
+    }
 
     @PostMapping("/addEducations")
-    public RedirectView postEducation(EducationModel educationModel){
+    public RedirectView postEducation(EducationModel educationModel) {
         educationService.addEducation(educationModel);
         return new RedirectView("educations");
     }
 
-    @GetMapping ("/editEducations/{id}")
-    public String getEducationById (@PathVariable("id")Long id, Model model){
+    @GetMapping("/editEducations/{id}")
+    public String getEducationById(@PathVariable("id") Long id, Model model) {
         EducationModel educationModel = educationService.getEducationById(id);
         model.addAttribute("education", educationModel);
         return "competence/editEducations";
     }
 
     @PostMapping("/educations/{id}")
-    public RedirectView removeEducation (@PathVariable("id") Long id){
+    public RedirectView removeEducation(@PathVariable("id") Long id) {
         educationService.removeEducation(id);
         return new RedirectView("/educations");
     }
 
     @PostMapping("/editEducations/{id}")
-    public RedirectView postEditEducation (@PathVariable("id") Long id, EducationModel editEducationModel) {
+    public RedirectView postEditEducation(@PathVariable("id") Long id, EducationModel editEducationModel) {
         educationService.saveEditEducation(editEducationModel);
         return new RedirectView("/educations");
     }

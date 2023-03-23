@@ -1,26 +1,25 @@
 package com.example.myresume.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 public class WorkExperienceModel {
- @Id
- @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
- @DateTimeFormat(pattern = "yyyy-MM")
- @Column(name="start_work")
+    @DateTimeFormat(pattern = "yyyy-MM")
+    @Column(name = "start_work")
     private Date startWork;
- @DateTimeFormat(pattern = "yyyy-MM")
- @Column(name="finish_work")
+    @DateTimeFormat(pattern = "yyyy-MM")
+    @Column(name = "finish_work")
     private Date finishWork;
-@Column(name="company_name")
+    @Column(name = "company_name")
     private String companeName;
-@Column(name="job_title")
+    @Column(name = "job_title")
     private String jobTitle;
-@Column(name="experience")
+    @Column(name = "experience")
     private String experience;
 
     public WorkExperienceModel() {

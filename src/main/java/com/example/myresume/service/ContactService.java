@@ -1,4 +1,5 @@
 package com.example.myresume.service;
+
 import com.example.myresume.model.ContactModel;
 import com.example.myresume.repository.ContactRepository;
 import org.springframework.stereotype.Service;

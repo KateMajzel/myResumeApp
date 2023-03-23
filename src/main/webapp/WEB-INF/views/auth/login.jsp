@@ -37,10 +37,8 @@
 <!-- Resume section start -->
 <!-- Resume section end -->
 
-
 <!-- Review section start -->
 <!-- Review section end -->
-
 
 <!-- Portfolio section start -->
 <!-- Portfolio section end -->
@@ -53,9 +51,6 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-8 offset-xl-2">
-<%--                <div class="section-title">--%>
-<%--                    <h1>Login or register</h1>--%>
-<%--                </div>--%>
                 <div class="section-title">
                     <h2>Login</h2>
                 </div>
@@ -63,7 +58,8 @@
                     <form method="post" form class="contact-form" action='<c:url value="/login"/>'>
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" id="username" name="username" placeholder="Username" required autofocus>
+                                <input type="text" id="username" name="username" placeholder="Username" required
+                                       autofocus>
                             </div>
 
                             <div class="col-md-6">
@@ -72,42 +68,13 @@
                             <div class="text-md-right">
                                 <button class="site-btn" type="submit">Log in</button>
                             </div>
-
+                        </div>
                     </form>
                 </div>
             </div>
 </section>
 <!-- Login section end -->
 
-<!-- Register section start
-<section class="contact-section spad">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-8 offset-xl-2">
-                <div class="section-title">
-                    <h2>Register</h2>
-                </div>
-                <div>
-                    <form method="post" form class="contact-form" action='<c:url value="/login"/>'>
-                        <div class="row">
-
-                            <div class="col-md-6">
-                                <input name="eMail" type="text" placeholder="E-mail">
-                            </div>
-                        <div class="row">
-
-                            <div class="col-md-6">
-                                <input name="password" type="text" placeholder="Password">
-                            </div>
-                            <div class="text-md-right">
-                                <button class="site-btn">Register</button>
-                            </div>
-
-                    </form>
-                </div>
-            </div>
-</section>
- Register section end -->
 
 <!-- Footer section start -->
 <footer class="footer-section">

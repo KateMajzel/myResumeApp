@@ -6,7 +6,7 @@
                     <h2>Contact Me</h2>
                 </div>
 
-                <form method="post" form class="contact-form" action='<c:url value="/contact"/>'>
+                <form method="post" form class="contact-form" action='<c:url value="/contacts"/>'>
                     <div class="row">
                         <div class="col-md-6">
                             <input name="nameSender" type="text" placeholder="Name">

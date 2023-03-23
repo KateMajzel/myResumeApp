@@ -20,7 +20,8 @@
             <div class="col-xl-10 offset-xl-1">
                 <div class="social-link-warp">
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/katarzyna-majzel-pospiech/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/katarzyna-majzel-pospiech/" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
                     </div>
                     <h2 class="hidden-md hidden-sm">My Ll Profile</h2>
                 </div>

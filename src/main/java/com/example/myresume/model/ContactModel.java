@@ -4,16 +4,16 @@ import javax.persistence.*;
 
 @Entity
 public class ContactModel {
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-@Column(name ="name_sender")
+    @Column(name = "name_sender")
     private String nameSender;
-@Column(name="email")
+    @Column(name = "email")
     private String email;
-@Column(name="subject")
+    @Column(name = "subject")
     private String subject;
-@Column(name="message")
+    @Column(name = "message")
     private String message;
 
     public ContactModel() {

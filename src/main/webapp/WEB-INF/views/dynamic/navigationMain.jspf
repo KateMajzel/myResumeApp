@@ -1,5 +1,5 @@
 <!-- Header section start -->
-<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 
 <header class="header-section">
     <div class="container-fluid">
@@ -13,13 +13,13 @@
             <div class="col-md-8 text-md-right header-buttons">
                 <a class="site-btn" target="_blank" href='<c:url value="resource/pdf/CVKMP.pdf"/>'>
                     <span>Download CV</span></a>
-                <a class="site-btn" href='<c:url value="/workExperience"/>'>
+                <a class="site-btn" href='<c:url value="/workExperiences"/>'>
                     <span>Work Experience</span></a>
                 <a class="site-btn" href='<c:url value="/hub"/>'>
                     <span>Git Hub</span></a>
-                <a class="site-btn" href='<c:url value="/education"/>'>
+                <a class="site-btn" href='<c:url value="/educations"/>'>
                     <span>Education</span></a>
-                <a class="site-btn" href='<c:url value="/contact"/>'>
+                <a class="site-btn" href='<c:url value="/contacts"/>'>
                     <span>Contact Me</span></a>
                 <a class="site-btn" href='<c:url value="/login"/>'>
                     <span>Login</span></a>

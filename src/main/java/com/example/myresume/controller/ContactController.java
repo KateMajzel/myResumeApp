@@ -9,19 +9,18 @@ import org.springframework.web.servlet.view.RedirectView;
 
 @Controller
 public class ContactController {
-
     private final ContactService contactService;
 
     public ContactController(ContactService contactService) {
         this.contactService = contactService;
     }
 
-    @GetMapping("/contact")
+    @GetMapping("/contacts")
     public String getAddContact() {
         return "communication/contact";
     }
 
-    @PostMapping("/contact")
+    @PostMapping("/contacts")
     public RedirectView postAddMessage(ContactModel contactModel) {
         contactService.addMessage(contactModel);
         return new RedirectView("thanks");

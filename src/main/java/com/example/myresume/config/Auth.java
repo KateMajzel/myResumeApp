@@ -1,4 +1,5 @@
 package com.example.myresume.config;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -17,12 +18,12 @@ import java.util.Arrays;
 public class Auth {
 
     @Bean
-    protected PasswordEncoder passwordEncoder(){
+    protected PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Bean
-     public InMemoryUserDetailsManager get(){
+    public InMemoryUserDetailsManager get() {
         UserDetails user = User.withUsername("user")
                 .password(passwordEncoder().encode("user"))
                 .roles("USER")
@@ -33,13 +34,14 @@ public class Auth {
                 .build();
         return new InMemoryUserDetailsManager(Arrays.asList(user, admin));
     }
+
     @Bean
-    public SecurityFilterChain filterChain (HttpSecurity http) throws Exception {
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/**", "/workExperiences/**", "/educations/**", "/thanks/**", "/hub/**", "/contact/**", "/resource/**")
                 .permitAll()
 
-                .antMatchers( "/","/editWorkExperiences/**", "/editEducations/**")
+                .antMatchers("/", "/editWorkExperiences/**", "/editEducations/**")
                 .hasAnyRole("ADMIN")
 
                 .antMatchers(HttpMethod.POST, "/", "/editWorkExperiences/**", "/editEducations/**").hasRole("ADMIN")
@@ -60,7 +62,7 @@ public class Auth {
                 .logoutUrl("/logout")
                 .permitAll();
 
-                return http.build();
+        return http.build();
 
     }
 }

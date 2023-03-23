@@ -7,10 +7,12 @@
     <meta name="keywords" content="resume, civic, onepage, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link href='<c:url value="/resource/img/portfolio/logoMeisel.png"/>' rel="shortcut icon" href='<c:url value="https://index.html"/>'>
+    <link href='<c:url value="/resource/img/portfolio/logoMeisel.png"/>' rel="shortcut icon"
+          href='<c:url value="https://index.html"/>'>
 
     <!-- Google Fonts -->
-    <link href='<c:url value="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700"/>' rel="stylesheet">
+    <link href='<c:url value="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700"/>'
+          rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href='<c:url value="/resource/css/bootstrap.min.css"/>'/>
@@ -19,7 +21,6 @@
     <link rel="stylesheet" href='<c:url value="/resource/css/owl.carousel.css"/>'/>
     <link rel="stylesheet" href='<c:url value="/resource/css/magnific-popup.css"/>'/>
     <link rel="stylesheet" href='<c:url value="/resource/css/style.css"/>'/>
-
 
 
     <!--[if lt IE 9]>

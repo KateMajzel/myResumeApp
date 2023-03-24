@@ -4,10 +4,10 @@ More: javadeveloper.com.pl
 
 
 Used tech stack:
-Spring Boot
-Java 17
-Spring MVC
-Spring Data JPA
-Spring Security
-MySQL
+Spring Boot,
+Java 17,
+Spring MVC,
+Spring Data JPA,
+Spring Security,
+MySQL,
 Bootstrap

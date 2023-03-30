@@ -11,6 +11,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+
 import java.util.Arrays;
 
 @Configuration
@@ -41,10 +42,10 @@ public class Auth {
                 .antMatchers("/**", "/workExperiences/**", "/educations/**", "/thanks/**", "/hub/**", "/contact/**", "/resource/**")
                 .permitAll()
 
-                .antMatchers("/", "/editWorkExperiences/**", "/editEducations/**")
+                .antMatchers("/", "/editWorkExperiences/**", "/editEducations/**", "/addNewEducations/**", "/addNewExperiences/**")
                 .hasAnyRole("ADMIN")
 
-                .antMatchers(HttpMethod.POST, "/", "/editWorkExperiences/**", "/editEducations/**").hasRole("ADMIN")
+                .antMatchers(HttpMethod.POST, "/", "/editWorkExperiences/**", "/editEducations/**", "/addNewEducations/**", "/addNewExperiences/**").hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()
 

@@ -12,8 +12,8 @@
                 <ul class="resume-list">
                     <c:forEach items="${workExperienceModel}" var="exp">
                         <li>
-                            <h2><fmt:formatDate pattern="yyyy-MM" value="${exp.startWork}"/></h2>
                             <h2><fmt:formatDate pattern="yyyy-MM" value="${exp.finishWork}"/></h2>
+                            <h2><fmt:formatDate pattern="yyyy-MM" value="${exp.startWork}"/></h2>
                             <h3>${exp.companeName}</h3>
                             <h4>${exp.jobTitle}</h4>
                             <p>${exp.experience} </p>
@@ -24,6 +24,13 @@
                             <sec:csrfInput/>
                         </security:authorize>
                     </c:forEach>
+
+                    <security:authorize access="hasAnyRole('ADMIN')">
+                        <a href='<c:url value="/addNewExperiences/"/>' class="btn btn-danger pull-right"
+                        <span class="text">Add</span>
+                        </a>
+                    </security:authorize>
+
                 </ul>
             </div>
         </div>

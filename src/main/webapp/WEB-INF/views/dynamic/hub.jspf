@@ -62,7 +62,7 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="portfolio-item">
-                        <a href="img/portfolio/english.png" class="set-bg port-pic"
+                        <a class="set-bg port-pic"
                            data-setbg="resource/img/portfolio/english.png"></a>
                         <h2>English</h2>
                         <p>B2</p>
@@ -70,26 +70,26 @@
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="portfolio-item">
-                        <a href="img/portfolio/workshops.png" class="set-bg port-pic"
+                        <a class="set-bg port-pic"
                            data-setbg="resource/img/portfolio/workshops.png"></a>
                         <h2>Workshops</h2>
-                        <p>Preparation and conducting </p>
+                        <p>Organization and conduct </p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="portfolio-item">
-                        <a href="img/portfolio/presentation.png" class="set-bg port-pic"
+                        <a class="set-bg port-pic"
                            data-setbg="resource/img/portfolio/presentation.png"></a>
                         <h2>Presentation</h2>
-                        <p>Create and prepare</p>
+                        <p>Create and organization</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="portfolio-item">
-                        <a href="img/portfolio/marketing.png" class="set-bg port-pic"
+                        <a class="set-bg port-pic"
                            data-setbg="resource/img/portfolio/marketing.png"></a>
                         <h2>Marketing and HR</h2>
-                        <p>Prepere communications</p>
+                        <p>Organization communications</p>
                     </div>
                 </div>
             </div>

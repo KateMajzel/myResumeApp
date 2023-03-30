@@ -12,13 +12,12 @@
 
                     <c:forEach items="${educationModel}" var="edu">
                         <li>
-                            <h2><fmt:formatDate pattern="yyyy-MM" value="${edu.startEducationDate}"/></h2>
                             <h2><fmt:formatDate pattern="yyyy-MM" value="${edu.finishEducationDate}"/></h2>
+                            <h2><fmt:formatDate pattern="yyyy-MM" value="${edu.startEducationDate}"/></h2>
                             <h3>${edu.directionName}</h3>
                             <h4>${edu.schoolName}</h4>
                             <p>${edu.informationOfeducation} </p>
                         </li>
-
                         <security:authorize access="hasAnyRole('ADMIN')">
                             <a href='<c:url value="/editEducations/${edu.id}"/>'
                                class="btn btn-general btn-secondary mb-3" role="button">Edit</a>
@@ -26,6 +25,11 @@
                         </security:authorize>
                     </c:forEach>
 
+                    <security:authorize access="hasAnyRole('ADMIN')">
+                        <a href='<c:url value="/addNewEducations/"/>' class="btn btn-danger pull-right"
+                        <span class="text">Add</span>
+                        </a>
+                    </security:authorize>
                 </ul>
             </div>
         </div>

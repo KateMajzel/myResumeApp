@@ -23,6 +23,10 @@ public class WorkExperienceService {
         repo.save(workExperienceModel);
     }
 
+    public void addNewExperience(WorkExperienceModel workExperienceModel) {
+        repo.save(workExperienceModel);
+    }
+
     public WorkExperienceModel getWorkExperienceById(Long id) {
         Optional<WorkExperienceModel> workExperience = repo.findById(id);
         if (workExperience.isPresent()) {

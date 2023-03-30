@@ -7,11 +7,11 @@
             <div class="col-md-4">
                 <div class="site-logo">
                     <h2><a href='<c:url value="/"/>'>CV</a></h2>
-                    <p>Junior Java Kate Majzel</p>
+                    <p>Java Developer Kate Majzel</p>
                 </div>
             </div>
             <div class="col-md-8 text-md-right header-buttons">
-                <a class="site-btn" target="_blank" href='<c:url value="resource/pdf/CVKMP.pdf"/>'>
+                <a class="site-btn" target="_blank" href='<c:url value="resource/pdf/Katarzyna_Majzel CV.pdf"/>'>
                     <span>Download CV</span></a>
                 <a class="site-btn" href='<c:url value="/workExperiences"/>'>
                     <span>Work Experience</span></a>

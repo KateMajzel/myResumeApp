@@ -1,7 +1,6 @@
 package com.example.myresume.model;
 
 import javax.persistence.*;
-
 @Entity
 public class ContactModel {
     @Id

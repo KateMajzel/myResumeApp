@@ -30,6 +30,17 @@ public class WorkExperienceController {
         return new RedirectView("workExperiences");
     }
 
+    @PostMapping("/addNewExperiences")
+    public RedirectView postNewWorkExperience(WorkExperienceModel workExperienceModel) {
+        workExperienceService.addNewExperience(workExperienceModel);
+        return new RedirectView("../workExperiences");
+    }
+
+    @GetMapping("/addNewExperiences")
+    public String getAddNewExperiences() {
+        return "/competence/addExperiences";
+    }
+
     @GetMapping("/editWorkExperiences/{id}")
     public String getWorkExperienceById(@PathVariable("id") Long id, Model model) {
         WorkExperienceModel workExperienceModel = workExperienceService.getWorkExperienceById(id);
@@ -37,7 +48,7 @@ public class WorkExperienceController {
         return "competence/editWorkExperiences";
     }
 
-    @PostMapping("/workExperiences/{id}")
+    @PostMapping("/removeWorkExperiences/{id}")
     public RedirectView removeWorkExperience(@PathVariable("id") Long id) {
         workExperienceService.removeWorkExperience(id);
         return new RedirectView("/workExperiences");

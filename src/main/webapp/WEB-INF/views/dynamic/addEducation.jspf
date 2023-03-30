@@ -6,9 +6,9 @@
         <div class="row">
             <div class="col-xl-7 offset-xl-2">
                 <div class="section-title">
-                    <h2>Education</h2>
+                    <h2>add Education</h2>
                 </div>
-                <form method="post" action='<c:url value="/editEducations/${education.id}"/>'>
+                <form method="post" action='<c:url value="/addNewEducations/${education.id}"/>'>
                     <ul class="resume-list">
 
                         <li>
@@ -34,20 +34,14 @@
 
                         </li>
 
-                        <input class="btn btn-general btn-secondary mb-3" type="submit" value="Save"
-                               id="saveButton"></input>
+                        <input class="btn btn-general btn-secondary mb-3" type="submit" value="Add"
+                               id="searchButton"></input>
                         <sec:csrfInput/>
                     </ul>
                 </form>
             </div>
         </div>
-
-        <form method="post" action='<c:url value="/removeEducations/${id}"/>'>
-            <input class="btn btn-danger pull-right" type="submit" value="Delete" id="deleteButton"></input>
-            <sec:csrfInput/>
-        </form>
     </div>
 </section>
-
 
 

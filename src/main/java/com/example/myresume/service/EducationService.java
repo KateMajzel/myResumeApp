@@ -23,6 +23,10 @@ public class EducationService {
         repo.save(educationModel);
     }
 
+    public void addNewEducation(EducationModel educationModel) {
+        repo.save(educationModel);
+    }
+
     public EducationModel getEducationById(Long id) {
         Optional<EducationModel> education = repo.findById(id);
         if (education.isPresent()) {

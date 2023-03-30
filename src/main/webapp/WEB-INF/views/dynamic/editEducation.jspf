@@ -12,13 +12,13 @@
                     <ul class="resume-list">
 
                         <li>
-                            <label class="col-2 col-form-label">Start</label>
-                            <h2><input class="form-control" type="text" name="startEducationDate"
-                                       value="${education.startEducationDate}"/></h2>
-
                             <label class="col-2 col-form-label">Finish</label>
                             <h2><input class="form-control" type="text" name="finishEducationDate"
                                        value="${education.finishEducationDate}"/></h2>
+
+                            <label class="col-2 col-form-label">Start</label>
+                            <h2><input class="form-control" type="text" name="startEducationDate"
+                                       value="${education.startEducationDate}"/></h2>
 
                             <label class="col-2 col-form-label">DirectionName</label>
                             <h3><input class="form-control" type="text" name="directionName"

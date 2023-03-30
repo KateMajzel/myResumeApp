@@ -10,11 +10,11 @@ public class EducationModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @DateTimeFormat(pattern = "yyyy-MM")
-    @Column(name = "start_education_date")
-    private Date startEducationDate;
-    @DateTimeFormat(pattern = "yyyy-MM")
     @Column(name = "finish_education_date")
     private Date finishEducationDate;
+    @DateTimeFormat(pattern = "yyyy-MM")
+    @Column(name = "start_education_date")
+    private Date startEducationDate;
     @Column(name = "school_name")
     private String schoolName;
     @Column(name = "direction_name")

@@ -1,6 +1,6 @@
 my Resume app
 An application in the spirit of the MVC pattern, connected to SQL database. Allows you to create, read, update, and delete fields. It's similar to a CV generator. 
-### How it works ->  
+### How it works ->  https://bit.ly/JavaKate
 
 
 ### Used tech stack:

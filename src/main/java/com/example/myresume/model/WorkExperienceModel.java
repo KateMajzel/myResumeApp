@@ -2,7 +2,6 @@ package com.example.myresume.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
-import javax.validation.constraints.Null;
 import java.util.Date;
 
 @Entity
@@ -12,7 +11,6 @@ public class WorkExperienceModel {
     private Long id;
     @DateTimeFormat(pattern = "yyyy-MM")
     @Column(name = "finish_work")
-    @Null
     private Date finishWork;
     @DateTimeFormat(pattern = "yyyy-MM")
     @Column(name = "start_work")

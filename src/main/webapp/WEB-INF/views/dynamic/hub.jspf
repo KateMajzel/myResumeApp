@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="portfolio-item">
-                        <a href="img/portfolio/mobileApp.png" class="set-bg port-pic"
+                        <a class="set-bg port-pic"
                            data-setbg="resource/img/portfolio/mobileApp.png"></a>
                         <h2>In preparation -> Mobile App</h2>
                         <p>Flutter</p>

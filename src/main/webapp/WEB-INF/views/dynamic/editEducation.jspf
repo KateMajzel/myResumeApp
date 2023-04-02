@@ -29,8 +29,8 @@
                                        value="${education.schoolName}"/></h3>
 
                             <label class="col-2 col-form-label">informationOfeducation</label>
-                            <h3><input class="form-control" type="text" name="informationOfeducation"
-                                       value="${education.informationOfeducation}"/></h3>
+                            <textarea class="form-control" name="informationOfeducation" rows="5"
+                                       >${education.informationOfeducation}</textarea>
 
                         </li>
 

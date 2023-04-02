@@ -15,7 +15,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-10 offset-xl-1">
-                <h2 class="hidden-md hidden-sm">Wiadomość została wysłana. Dziękuje</h2>
+                <h2 class="hidden-md hidden-sm">Message was sent. Thank you</h2>
             </div>
         </div>
     </div>

@@ -40,12 +40,6 @@ The application follows the **MVC design pattern**:
 - **View** - Bootstrap-styled templates
 - **Controller** - Spring MVC REST endpoints handling business logic
 
-## 📸 Application Screenshots
-
-*[Screenshots of the application interface are included below]*
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -73,15 +67,13 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-## 👩‍💻 Author
+## 👩‍💻 Author: Katarzyna Majzel-Pośpiech
 
 Developed as a demonstration of full-stack Java development capabilities using modern Spring Framework technologies.
 
----
 
-*A comprehensive resume management system showcasing enterprise-level Java development practices*
 
-### Some images from the app:
+## 📸 Application Screenshots
 
 User part:
 

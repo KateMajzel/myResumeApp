@@ -6,7 +6,7 @@ A full-stack web application built following the **MVC (Model-View-Controller)**
 
 ## 🎥 Live Demo
 
-**See it in action:** [https://bit.ly/JavaKate](https://bit.ly/JavaKate)
+**See it in action:** (https://www.youtube.com/watch?v=4Q79J-Yplvw&feature=youtu.be)
 
 ## ✨ Key Features
 
